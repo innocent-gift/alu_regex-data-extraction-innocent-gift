@@ -1,8 +1,3 @@
-import sys
-import os
-
-# Add the parent directory to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from data_extractor import RegexExtractors
 
@@ -18,4 +13,3 @@ print("Hashtags:", extractor.extract_hashtags())
 print("Phone Numbers:", extractor.extract_phone_numbers())
 print("Credit Cards:", extractor.extract_credit_card_number())
 print("Currency:", extractor.extract_currency())
-
